@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kartrider.Api", "Kartrider.Api\Kartrider.Api.csproj", "{E605394E-BDA1-4A5C-88B1-4E4BF8DFEB7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kartrider.Api.Test", "Kartrider.Api.Test\Kartrider.Api.Test.csproj", "{F8F9BDBB-27DB-4A01-9253-C1F2DD6C7691}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kartrider.Api.AspNetCore", "Kartrider.Api.AspNetCore\Kartrider.Api.AspNetCore.csproj", "{511F132A-407D-47C4-9C44-807965D6EC37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{3186E4D3-6B0D-49D9-9C23-D2C0923CB63C}"
+	ProjectSection(SolutionItems) = preProject
+		publish.sh = publish.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E605394E-BDA1-4A5C-88B1-4E4BF8DFEB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E605394E-BDA1-4A5C-88B1-4E4BF8DFEB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E605394E-BDA1-4A5C-88B1-4E4BF8DFEB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E605394E-BDA1-4A5C-88B1-4E4BF8DFEB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F9BDBB-27DB-4A01-9253-C1F2DD6C7691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F9BDBB-27DB-4A01-9253-C1F2DD6C7691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F9BDBB-27DB-4A01-9253-C1F2DD6C7691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F9BDBB-27DB-4A01-9253-C1F2DD6C7691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{511F132A-407D-47C4-9C44-807965D6EC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511F132A-407D-47C4-9C44-807965D6EC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511F132A-407D-47C4-9C44-807965D6EC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511F132A-407D-47C4-9C44-807965D6EC37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {818BE4E7-D4EA-49DB-97B4-ADAED735F2F7}
+	EndGlobalSection
+EndGlobal
