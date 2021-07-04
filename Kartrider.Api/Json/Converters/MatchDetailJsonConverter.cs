@@ -37,8 +37,17 @@ namespace Kartrider.Api.Json.Converter
 
                         case "gameSpeed":
                             reader.Read();
-                            var gameSpeed = reader.GetInt32();
-                            if (gameSpeed == 4) //무한 부스터
+                            // Int32일때도, string일때도 있음.
+                            string gameSpeed;
+                            if (reader.TokenType == JsonTokenType.Number)
+                            {
+                                gameSpeed = reader.GetInt32().ToString();
+                            }
+                            else
+                            {
+                                gameSpeed = reader.GetString();
+                            }
+                            if (gameSpeed == "4") //무한 부스터
                                 matchDetail.GameSpeed = GameSpeed.Fast;
                             else
                                 matchDetail.GameSpeed = (GameSpeed)Enum.Parse(typeof(GameSpeed), gameSpeed.ToString());
@@ -64,7 +73,15 @@ namespace Kartrider.Api.Json.Converter
 
                         case "playTime":
                             reader.Read();
-                            var playTime = reader.GetInt32();
+                            int playTime;
+                            if (reader.TokenType == JsonTokenType.Number)
+                            {
+                                playTime = reader.GetInt32();
+                            }
+                            else
+                            {
+                                playTime = Convert.ToInt32(reader.GetString());
+                            }
                             matchDetail.PlayTime = TimeSpan.FromSeconds(playTime);
                             break;
 
