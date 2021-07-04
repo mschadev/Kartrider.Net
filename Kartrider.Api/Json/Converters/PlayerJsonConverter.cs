@@ -80,7 +80,7 @@ namespace Kartrider.Api.Json.Converter
                             var rankStr = reader.GetString();
                             if (rankStr == "")
                             {
-                                player.Rank = -1;
+                                player.Rank = 99;
                             }
                             else
                             {
