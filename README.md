@@ -29,9 +29,9 @@
 
 ```sh
 ## If ASP.NET Core env.
-Install-Package Kartrider.Api.AspNetCore -Version 0.1.0
+Install-Package Kartrider.Api.AspNetCore -Version 0.1.2
 ## Otherwise
-Install-Package Kartrider.Api -Version 0.1.0
+Install-Package Kartrider.Api -Version 0.1.2
 ```
 
 ## Usage
