@@ -144,7 +144,14 @@ namespace Kartrider.Api.Json.Converter
             writer.WriteStringValue(value.StartDateTime);
             writer.WritePropertyName("trackId");
             writer.WriteStringValue(value.TrackId);
-            if (value.IsTeamMode)
+            /*
+             * 예외 상황 1)
+             * 매치 아이디 02260001226c7d6f 같은 배틀 모드의 승리는 레드팀 or 블루팀이지만
+             * TeamDTO가 아니기 때문에(개인전처럼 출력됨) 이 부분도 체크해줘야 한다.
+             * 그래서 value.Players.Any(p=>p.TeamType != TeamType.Solo) 코드를 통해
+             * 플레이어 팀타입이 솔로가 아닌 경우여야만 진짜 팀전이다.
+             */
+            if (value.IsTeamMode && value.Players.Any(p=>p.TeamType != TeamType.Solo))
             {
                 writer.WritePropertyName("teams");
                 writer.WriteStartArray();
