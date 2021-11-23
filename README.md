@@ -1,7 +1,7 @@
 # Kartrider.Net
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg)](https://github.com/RichardLitt/standard-readme)
 ![example workflow](https://github.com/zxc010613/Kartrider.Net/actions/workflows/dotnet.yml/badge.svg)
-[![codecov](https://codecov.io/gh/zxc010613/Kartrider.Net/branch/main/graph/badge.svg?token=YPYORWDAK4)](https://codecov.io/gh/zxc010613/Kartrider.Net)
+[![codecov](https://codecov.io/gh/mschadev/Kartrider.Net/branch/main/graph/badge.svg?token=YPYORWDAK4)](https://codecov.io/gh/mschadev/Kartrider.Net)
 ![](https://img.shields.io/nuget/dt/Kartrider.Api)  
 
 카트라이더 OPEN API 라이브러리  
