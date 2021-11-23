@@ -25,7 +25,6 @@ namespace Kartrider.Api.Test.Endpoints.Match
         [DataTestMethod]
         [DataRow("117717532", 0,10,null)]
         [DataRow("117717532", 0,100,new object[] { "effd66758144a29868663aa50e85d3d95c5bc0147d7fdb9802691c2087f3416e" })]
-        [DataRow("117717532", 0,500,new object[] { "7b9f0fd5377c38514dbb78ebe63ac6c3b81009d5a31dd569d1cff8f005aa881a","effd66758144a29868663aa50e85d3d95c5bc0147d7fdb9802691c2087f3416e" })]
         public async Task Get_Matches_By_AccessId_Limit_Validation(string accessId,int offset,int limit,object[] matchTypeObjects)
         {
             string[] matchTypes = matchTypeObjects?.Select(p => p.ToString()).ToArray();
