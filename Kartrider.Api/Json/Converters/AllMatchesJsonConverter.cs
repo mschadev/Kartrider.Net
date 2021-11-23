@@ -24,26 +24,38 @@ namespace Kartrider.Api.Json.Converter
             Type typeToConvert,
             JsonSerializerOptions options)
         {
+            bool ignoreFirstMatchesProperty = false;
             var allMatches = new AllMatches
             {
                 Matches = new Dictionary<string, List<string>>()
             };
+            List<string> matchIds = null;
             while (reader.Read())
+            {
+                if (reader.TokenType == JsonTokenType.PropertyName && reader.GetString() == "matches")
+                {
+                    if (!ignoreFirstMatchesProperty)
+                    {
+                        ignoreFirstMatchesProperty = true;
+                        continue;
+                    }
+                    matchIds = new List<string>(); //matchId List
+                    while (reader.TokenType != JsonTokenType.EndArray)
+                    {
+                        reader.Read();
+                        if (reader.TokenType == JsonTokenType.String)
+                        {
+                            matchIds.Add(reader.GetString());
+                        }
+                    }
+                }
                 if (reader.TokenType == JsonTokenType.PropertyName && reader.GetString() == "matchType")
                 {
                     reader.Read();
                     var matchType = reader.GetString();
-                    var matches = new List<string>(); //matchId List
-
-                    while (reader.TokenType != JsonTokenType.EndArray)
-                    {
-                        reader.Read();
-                        if (reader.TokenType == JsonTokenType.String) matches.Add(reader.GetString());
-                    }
-
-                    allMatches.Matches.Add(matchType, matches);
+                    allMatches.Matches.Add(matchType, matchIds);
                 }
-
+            }
             return allMatches;
         }
         /// <summary>

@@ -21,6 +21,7 @@ namespace Kartrider.Api.Json.Converter
             {
                 Matches = new Dictionary<string, List<MatchInfo>>()
             };
+            bool ignoreFirstMatchesProperty = false;
             while (reader.Read())
                 if (reader.TokenType == JsonTokenType.PropertyName)
                 {
@@ -33,20 +34,26 @@ namespace Kartrider.Api.Json.Converter
                             matchesByAccessId.Nickname = nickname;
                             break;
 
-                        case "matchType":
-                            reader.Read();
-                            var matchType = reader.GetString();
-                            reader.Read();
+                        case "matches":
+                            // 첫 번째 matches Property는 무시함
+                            if (!ignoreFirstMatchesProperty)
+                            {
+                                ignoreFirstMatchesProperty = true;
+                                break;
+                            }
                             // current: PropertyName, matches
                             reader.Read();
                             // current: StartArray
                             reader.Read();
                             // current: StartObject
-                            matchesByAccessId.Matches.Add(matchType, new List<MatchInfo>());
                             while (reader.TokenType != JsonTokenType.EndArray)
                             {
                                 var matchInfo = JsonSerializer.Deserialize<MatchInfo>(ref reader, options);
-                                matchesByAccessId.Matches[matchType].Add(matchInfo);
+                                if (!matchesByAccessId.Matches.ContainsKey(matchInfo.MatchType))
+                                {
+                                    matchesByAccessId.Matches.Add(matchInfo.MatchType, new List<MatchInfo>());
+                                }
+                                matchesByAccessId.Matches[matchInfo.MatchType].Add(matchInfo);
                                 reader.Read();
                             }
 
