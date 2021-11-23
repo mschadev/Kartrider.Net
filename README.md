@@ -14,9 +14,6 @@
 |-------------------------------|------------------------------------------------------|------|
 | Kartrider.Api           | Nexon Kartrider OPEN API wrapper library.         |   ![](https://img.shields.io/nuget/vpre/Kartrider.Api)   |
 | Kartrider.Api.AspNetCore | Nexon Kartrider OPEN API wrapper library for ASP.NET Core.     |   ![](https://img.shields.io/nuget/vpre/Kartrider.Api.AspNetCore)   |
-  
-해당 프로젝트의 ![](https://img.shields.io/nuget/vpre/Kartrider.Api)은 0.X.X버전입니다.  
-1.0.0이상 Release시, 최신버전인 [kartrider.api.net](https://github.com/zxc010613/kartrider.api.net) `1.0.6`은 삭제됩니다.
 ## Table of Contents
 
 - [Install](#install)
