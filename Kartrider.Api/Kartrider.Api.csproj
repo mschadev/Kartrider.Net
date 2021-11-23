@@ -5,7 +5,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <UserSecretsId>c2a65f46-c39f-46ab-a10f-910bfb6571a9</UserSecretsId>
-    <Version>0.1.2</Version>
+    <Version>2.0.0</Version>
     <Authors>Plorence</Authors>
     <RepositoryUrl>https://github.com/zxc010613/Kartrider.Net</RepositoryUrl>
     <PackageTags>kartrider</PackageTags>
