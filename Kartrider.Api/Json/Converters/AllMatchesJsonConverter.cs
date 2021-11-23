@@ -32,28 +32,34 @@ namespace Kartrider.Api.Json.Converter
             List<string> matchIds = null;
             while (reader.Read())
             {
-                if (reader.TokenType == JsonTokenType.PropertyName && reader.GetString() == "matches")
+                if (reader.TokenType == JsonTokenType.PropertyName)
                 {
-                    if (!ignoreFirstMatchesProperty)
+                    string property = reader.GetString();
+                    switch (property)
                     {
-                        ignoreFirstMatchesProperty = true;
-                        continue;
+                        case "matches":
+                            if (!ignoreFirstMatchesProperty)
+                            {
+                                ignoreFirstMatchesProperty = true;
+                                break;
+                            }
+                            matchIds = new List<string>(); //matchId List
+                            while (reader.TokenType != JsonTokenType.EndArray)
+                            {
+                                reader.Read();
+                                if (reader.TokenType == JsonTokenType.String)
+                                {
+                                    matchIds.Add(reader.GetString());
+                                }
+                            }
+                            break;
+                        case "matchType":
+                            reader.Read();
+                            var matchType = reader.GetString();
+                            allMatches.Matches.Add(matchType, matchIds);
+                            break;
                     }
-                    matchIds = new List<string>(); //matchId List
-                    while (reader.TokenType != JsonTokenType.EndArray)
-                    {
-                        reader.Read();
-                        if (reader.TokenType == JsonTokenType.String)
-                        {
-                            matchIds.Add(reader.GetString());
-                        }
-                    }
-                }
-                if (reader.TokenType == JsonTokenType.PropertyName && reader.GetString() == "matchType")
-                {
-                    reader.Read();
-                    var matchType = reader.GetString();
-                    allMatches.Matches.Add(matchType, matchIds);
+                   
                 }
             }
             return allMatches;
