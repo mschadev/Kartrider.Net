@@ -17,11 +17,11 @@ namespace Kartrider.Api.Endpoints.MatchEndpoint
     public class MatchEndpoint : IMatchEndpoint
     {
         private const string MatchRootUrl = "/matches";
-        private const string AllMatches = "/all?start_date={0}&end_date={1}&offset={2} &limit={3}&match_types={4}";
+        private const string AllMatches = "/all?start_date={0}&end_date={1}&offset={2}&limit={3}&match_types={4}";
         private const string MatchDetail = "/{0}";
 
         private const string AllMatchesByAccessId =
-            "/users/{0}/matches?start_date={1}&end_date={2} &offset={3}&limit={4}&match_types={5}";
+            "/users/{0}/matches?start_date={1}&end_date={2}&offset={3}&limit={4}&match_types={5}";
 
         private readonly IRequester _requester;
         /// <summary>
