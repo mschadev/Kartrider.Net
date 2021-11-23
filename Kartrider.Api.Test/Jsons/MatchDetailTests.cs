@@ -15,8 +15,6 @@ namespace Kartrider.Api.Test.Jsons
         [DataRow(0, DisplayName = "Get all match detail, offset: 0")]
         [DataRow(100, DisplayName = "Get all match detail, offset: 100")]
         [DataRow(200, DisplayName = "Get all match detail, offset: 200")]
-        [DataRow(300, DisplayName = "Get all match detail, offset: 300")]
-        [DataRow(400, DisplayName = "Get all match detail, offset: 400")]
         public async Task Json_Write(int offset)
         {
             AllMatches allMatches = await kartriderApi.Match.GetAllMatchesAsync(null, null, offset, 50);
