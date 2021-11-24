@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/zxc010613/Kartrider.Net</RepositoryUrl>
     <PackageTags>kartrider</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Nexon Kartrider OPEN API wrapper library.</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

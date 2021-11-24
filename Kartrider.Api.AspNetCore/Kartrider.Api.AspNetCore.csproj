@@ -8,6 +8,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/zxc010613/Kartrider.Net</RepositoryUrl>
     <PackageTags>kartrider</PackageTags>
+    <Description>Nexon Kartrider OPEN API wrapper library for ASP.NET Core.</Description>
   </PropertyGroup>
 
   <ItemGroup>
