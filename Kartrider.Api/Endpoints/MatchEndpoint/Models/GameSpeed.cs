@@ -23,6 +23,10 @@
         /// <summary>
         ///     보통
         /// </summary>
-        Normal
+        Normal,
+        /// <summary>
+        /// 통합
+        /// </summary>
+        Combine = 7
     }
 }
