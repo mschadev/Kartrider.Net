@@ -12,8 +12,8 @@
 
 | Package                       | Description                                          | Link |
 |-------------------------------|------------------------------------------------------|------|
-| Kartrider.Api           | Nexon Kartrider OPEN API wrapper library.         |   ![](https://img.shields.io/nuget/vpre/Kartrider.Api)   |
-| Kartrider.Api.AspNetCore | Nexon Kartrider OPEN API wrapper library for ASP.NET Core.     |   ![](https://img.shields.io/nuget/vpre/Kartrider.Api.AspNetCore)   |
+| Kartrider.Api           | Nexon Kartrider OPEN API wrapper library.         |   [![](https://img.shields.io/nuget/vpre/Kartrider.Api)](https://www.nuget.org/packages/Kartrider.Api/)   |
+| Kartrider.Api.AspNetCore | Nexon Kartrider OPEN API wrapper library for ASP.NET Core.     |   [![](https://img.shields.io/nuget/vpre/Kartrider.Api.AspNetCore)](https://www.nuget.org/packages/Kartrider.Api.AspNetCore/)   |
 ## Table of Contents
 
 - [Install](#install)
@@ -56,7 +56,7 @@ namespace ConsoleApp1
 ```
 ## Maintainers
 
-[@zxc010613](https://github.com/zxc010613)
+[@mschadev](https://github.com/mschadev)
 
 ## Contributing
 
