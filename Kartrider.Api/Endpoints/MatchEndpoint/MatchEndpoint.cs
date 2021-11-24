@@ -36,7 +36,7 @@ namespace Kartrider.Api.Endpoints.MatchEndpoint
         public async Task<AllMatches> GetAllMatchesAsync(DateTime? startDate = null, DateTime? endDate = null,
             int offset = 0, int limit = 10, IEnumerable<string> matchTypes = null)
         {
-            var url = $"{MatchRootUrl}{string.Format(AllMatches, startDate, endDate, offset, limit, MatchTypeToStringArray(matchTypes))}";
+            var url = $"{MatchRootUrl}{string.Format(AllMatches, startDate?.ToString(Define.REQUEST_DATE_TIME_FORMAT), endDate?.ToString(Define.REQUEST_DATE_TIME_FORMAT), offset, limit, MatchTypeToStringArray(matchTypes))}";
             var json = await _requester.CreateGetRequestAsync(url).ConfigureAwait(false);
             return JsonSerializer.Deserialize<AllMatches>(json);
         }
@@ -54,7 +54,7 @@ namespace Kartrider.Api.Endpoints.MatchEndpoint
             DateTime? endDate = null, int offset = 0, int limit = 10, IEnumerable<string> matchTypes = null)
         {
             var json = await _requester
-                .CreateGetRequestAsync(string.Format(AllMatchesByAccessId, accessId, startDate, endDate, offset, limit, MatchTypeToStringArray(matchTypes)
+                .CreateGetRequestAsync(string.Format(AllMatchesByAccessId, accessId, startDate?.ToString(Define.REQUEST_DATE_TIME_FORMAT), endDate?.ToString(Define.REQUEST_DATE_TIME_FORMAT), offset, limit, MatchTypeToStringArray(matchTypes)
                     )).ConfigureAwait(false);
             var obj = JsonSerializer.Deserialize<MatchesByAccessId>(json);
             if(obj.Nickname == null)
