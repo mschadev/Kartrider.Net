@@ -17,14 +17,14 @@ namespace Kartrider.Api.Endpoints.Interfaces
         /// <remarks>
         /// 유저의 MatchId를 매치 타입별, startDate 기준 내림차순으로 반환한다. <br/>
         /// 파라미터 정보 startDate, endDate 생략되는 경우 최근 10건 조회한다. <br/>
-        /// (최대 조회 건 수 500건) <br/>
+        /// (최대 조회 건 수 200건) <br/>
         /// <see href="https://developers.nexon.com/kart/api/13/34">API Docs</see>
         /// </remarks>
         /// <param name="accessId">유저 고유 식별자</param>
         /// <see cref="Kartrider.Api.Endpoints.UserEndpoint.User.AccessId"/>
         /// <param name="startDate">조회 시작 날짜 (UTC 기준)</param>
         /// <param name="endDate">조회 끝 날짜 (UTC 기준)</param>
-        /// <param name="offset">조회 오프셋 </param>
+        /// <param name="offset">조회 오프셋</param>
         /// <param name="limit">조회 수</param>
         /// <param name="matchTypes">조회할 매치 타입 HashID 배열</param>
         /// <seealso href="https://static.api.nexon.co.kr/kart/latest/metadata.zip">
@@ -40,13 +40,13 @@ namespace Kartrider.Api.Endpoints.Interfaces
         /// <remarks>
         /// 모든 유저의 MatchId를 매치 타입별, startDate 기준 내림차순으로 반환한다. <br/>
         /// startDate, endDate 생략되는 경우 UTC 기준 현재 날짜의 매치리스트를 조회한다. <br/>
-        /// (최대 조회 건 수 500건) <br/>
+        /// (최대 조회 건 수 200건) <br/>
         /// <see href="https://developers.nexon.com/kart/api/13/35">API Docs</see>
         /// </remarks>
         /// <param name="startDate">조회 시작 날짜 (UTC 기준)</param>
         /// <param name="endDate">조회 끝 날짜 (UTC 기준)</param>
         /// <param name="offset">조회 오프셋</param>
-        /// <param name="limit">조회 수 (최대 500)</param>
+        /// <param name="limit">조회 수</param>
         /// <param name="matchTypes">조회할 매치 타입 HashID 배열</param>
         /// <seealso href="https://static.api.nexon.co.kr/kart/latest/metadata.zip">
         /// zip 다운로드 후, matchType.json 참고
