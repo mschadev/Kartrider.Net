@@ -3,11 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
     <Authors>Plorence</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/zxc010613/Kartrider.Net</RepositoryUrl>
     <PackageTags>kartrider</PackageTags>
+    <Description>Nexon Kartrider OPEN API wrapper library for ASP.NET Core.</Description>
   </PropertyGroup>
 
   <ItemGroup>

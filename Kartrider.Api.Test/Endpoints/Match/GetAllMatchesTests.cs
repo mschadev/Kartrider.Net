@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -42,5 +43,21 @@ namespace Kartrider.Api.Test.Endpoints.Match
             int matchCount = allMatches.Matches.SelectMany(p => p.Value).Count();
             Assert.AreEqual(limit, matchCount);
         }
+        [TestMethod("날짜 범위")]
+        public async Task Get_All_Match_DateTime_Range_Validation()
+        {
+            DateTime startDateTime = DateTime.Now.AddDays(-1);
+            DateTime endDateTime = startDateTime.AddMinutes(2);
+            var matchIds = (await kartriderApi.Match.GetAllMatchesAsync(startDateTime, endDateTime, 0, 20)).Matches.SelectMany(p => p.Value);
+            foreach(var matchId in matchIds)
+            {
+                var match = await kartriderApi.Match.GetMatchDetailAsync(matchId);
+                if(!(startDateTime < match.StartDateTime && match.StartDateTime < endDateTime))
+                {
+                    Assert.Fail();
+                }
+            }
+        }
+
     }
 }
