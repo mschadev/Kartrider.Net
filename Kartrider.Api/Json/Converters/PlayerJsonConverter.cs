@@ -106,7 +106,7 @@ namespace Kartrider.Api.Json.Converter
                         case "matchTime":
                             reader.Read();
                             var record = reader.GetString();
-                            if (record == null || record == "")
+                            if (record == null || record == "" || record == "0")
                             {
                                 player.Record = TimeSpan.Zero;
                             }
