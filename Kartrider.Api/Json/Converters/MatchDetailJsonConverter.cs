@@ -15,7 +15,10 @@ namespace Kartrider.Api.Json.Converter
     {
         public override MatchDetail Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-            var matchDetail = new MatchDetail();
+            var matchDetail = new MatchDetail()
+            {
+                Players = new List<Player>()
+            };
             var lastTeamType = TeamType.Solo;
             while (reader.Read())
                 if (reader.TokenType == JsonTokenType.PropertyName)
@@ -109,8 +112,8 @@ namespace Kartrider.Api.Json.Converter
                             {
                                 break;
                             }
+
                             reader.Read();
-                            if (matchDetail.Players == null) matchDetail.Players = new List<Player>();
                             while (reader.TokenType != JsonTokenType.EndArray)
                             {
                                 var player = JsonSerializer.Deserialize<Player>(ref reader, options);
