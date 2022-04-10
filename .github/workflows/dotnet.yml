@@ -22,6 +22,8 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
+      env:
+          API_TESTApiKey: ${{ secrets.API_KEY }}
       run: dotnet test --no-build --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=opencover
     - name: Upload Codecov
       env:
