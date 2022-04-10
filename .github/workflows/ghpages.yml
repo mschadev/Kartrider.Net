@@ -23,6 +23,8 @@ jobs:
           args: install docfx
       - name: Install dependencies
         run: dotnet restore
+      - name: Copy README.md
+        run: cp README.md docs/index.md
       - name: DocFX Build
         working-directory: docs
         run: docfx docfx.json
