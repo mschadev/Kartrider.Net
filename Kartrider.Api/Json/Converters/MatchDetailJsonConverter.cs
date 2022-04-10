@@ -105,6 +105,10 @@ namespace Kartrider.Api.Json.Converter
 
                         case "players":
                             reader.Read();
+                            if (reader.TokenType == JsonTokenType.Null)
+                            {
+                                break;
+                            }
                             reader.Read();
                             if (matchDetail.Players == null) matchDetail.Players = new List<Player>();
                             while (reader.TokenType != JsonTokenType.EndArray)
