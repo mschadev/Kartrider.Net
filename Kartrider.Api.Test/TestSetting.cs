@@ -9,8 +9,8 @@ namespace Kartrider.Api.Test
         static TestSetting()
         {
             var configuration = new ConfigurationBuilder()
-                .AddEnvironmentVariables("API_TEST")
                 .AddJsonFile("testsettings.json")
+                .AddEnvironmentVariables("API_TEST")
                 .Build();
 
             ApiKey = configuration["ApiKey"];
