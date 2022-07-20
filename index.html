@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Kartrider.Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Kartrider.Net ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="api/Kartrider.Api.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="kartridernet">Kartrider.Net</h1>
+
+<p><a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/standard--readme-OK-green.svg" alt="standard-readme compliant"></a>
+<img src="https://github.com/mschadev/Kartrider.Net/actions/workflows/dotnet.yml/badge.svg" alt="example workflow">
+<a href="https://codecov.io/gh/mschadev/Kartrider.Net"><img src="https://codecov.io/gh/mschadev/Kartrider.Net/branch/main/graph/badge.svg?token=YPYORWDAK4" alt="codecov"></a>
+<img src="https://img.shields.io/nuget/dt/Kartrider.Api" alt=""></p>
+<p>카트라이더 OPEN API 라이브러리<br>
+<strong>특징</strong></p>
+<ul>
+<li><a href="https://docs.microsoft.com/ko-kr/dotnet/api/system.net.http.httpclient?view=netcore-3.1">HttpClient</a>클래스 사용</li>
+<li><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md">NET Standard 2.0</a></li>
+<li><a href="https://github.com/BenFradet/RiotSharp">RiotSharp</a> 라이브러리의 디렉터리 구조, Http Requester를 참고함.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kartrider.Api</td>
+<td>Nexon Kartrider OPEN API wrapper library.</td>
+<td><a href="https://www.nuget.org/packages/Kartrider.Api/"><img src="https://img.shields.io/nuget/vpre/Kartrider.Api" alt=""></a></td>
+</tr>
+<tr>
+<td>Kartrider.Api.AspNetCore</td>
+<td>Nexon Kartrider OPEN API wrapper library for ASP.NET Core.</td>
+<td><a href="https://www.nuget.org/packages/Kartrider.Api.AspNetCore/"><img src="https://img.shields.io/nuget/vpre/Kartrider.Api.AspNetCore" alt=""></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#install">Install</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#maintainers">Maintainers</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id="install">Install</h2>
+<pre><code class="lang-sh">## If ASP.NET Core env.
+Install-Package Kartrider.Api.AspNetCore -Version 2.0.3
+## Otherwise
+Install-Package Kartrider.Api -Version 2.0.3
+</code></pre>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-cs">using Kartrider.Api;
+using Kartrider.Api.Endpoints.UserEndpoint;
+
+using System;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            IKartriderApi kartriderApi = KartriderApi.GetInstance(&quot;API_KEY&quot;);
+            User user = await kartriderApi.User.GetUserByNicknameAsync(&quot;extern&quot;);
+            Console.WriteLine($&quot;Nickname: {user.Nickname}&quot;);
+            Console.WriteLine($&quot;Level: {user.Level}&quot;);
+            Console.WriteLine($&quot;AccessId: {user.AccessId}&quot;);
+        }
+    }
+}
+</code></pre>
+<h2 id="maintainers">Maintainers</h2>
+<p><a href="https://github.com/mschadev">@mschadev</a></p>
+<h2 id="contributing">Contributing</h2>
+<p>PRs accepted.</p>
+<h2 id="license">License</h2>
+<p><a href="./LICENSE">MIT</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mschadev/Kartrider.Net/blob/main/docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

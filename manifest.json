@@ -1,0 +1,527 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/Kartrider.Net/Kartrider.Net/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.AspNetCore.IServiceCollectionExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.AspNetCore.IServiceCollectionExtension.html",
+          "hash": "dJ7y+By23RQNfolPW2LIRS9u/anJ7MC38KMe7sD83rk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.AspNetCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.AspNetCore.html",
+          "hash": "oTHs3bnIUQ+iuCYC81rjIxW/hczE43ZOKezvBoVoEHE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.Interfaces.IMatchEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.Interfaces.IMatchEndpoint.html",
+          "hash": "Ej8grNhae0MTXmVAqtPgmG5a0pOuH18uHxZSkX+JsBA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.Interfaces.IUserEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.Interfaces.IUserEndpoint.html",
+          "hash": "rSLmBYzBHbXJWVS/+x+oCnyeaXmMfp+lVjRAIDRa/JA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.Interfaces.html",
+          "hash": "Z6VKf0fV2kv2sFIH22NPk+tggEoDgBByYmNzVIEk6DM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Interfaces.IAllMatches-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Interfaces.IAllMatches-1.html",
+          "hash": "LJmbHc7NNIzigkI3AcC0zpuDZJLE82vNLef/8Wim5as="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Interfaces.html",
+          "hash": "htpmM3pFfqGDLjddXDOmWcjDJxPUfZLzH8IGmX6VF4c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.MatchEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.MatchEndpoint.html",
+          "hash": "xsJjWI4SzJA3gJ1RVXuyOOeyJvTf4tXEUgP79vt/XfE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.AllMatches.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.AllMatches.html",
+          "hash": "qhpd0OvedQINUrv7YMuvauu5VMw/rv95kI2C90NgMkY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.GameSpeed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.GameSpeed.html",
+          "hash": "Klr2ph1/XFhc5aaAk4fIJh3TZzQxX1J9S6JPHWx1ITE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.License.html",
+          "hash": "c7i8UAh8bwlNZVrptb8lv3Dywj+fH6Vxwn/bUvYOdTY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchBase.html",
+          "hash": "XroT5dD2E+/nK/BLZiI+3abhpVZaWiaJ/inspREzugE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchDetail.html",
+          "hash": "K8QX1Zome0vPMoU2zjOfpAMVneEb7CfOrW70VIuT+pw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchInfo.html",
+          "hash": "7YlkZTBXi84Ptw4xl2PlK0S4zPlUKoYFuNNg/d6w1FQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchResult.html",
+          "hash": "0uSIsw9EiptxKCXzZMqNE4o+1DJp+RoZqy3Mpi2sN9I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchesByAccessId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.MatchesByAccessId.html",
+          "hash": "MMailmRgSYPcYqAJ4GKhT66FVRDlEvlsC+t/M85vfic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.Player.html",
+          "hash": "E2SbSr5CiFDY5ymeSJKDGY9eaYzguHhtYEX6McTTMPs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.TeamType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.TeamType.html",
+          "hash": "42i11FRi5GZkBdLbuurBuLv8pd/kzABHayPXm7NCcvg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.Models.html",
+          "hash": "91o83UIPySdK7MWpqkvnxQK6XLW8wR8AahQHBnlv26U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.MatchEndpoint.html",
+          "hash": "jmfVBXmmQTAUiupDhEbItJJCIJg5AldxDXHDxZOgY64="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.UserEndpoint.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.UserEndpoint.User.html",
+          "hash": "yIHFPIu5I2mpmOA4eecnbmyoXwwPRA3/1x3bh/lEUc4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.UserEndpoint.UserEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.UserEndpoint.UserEndpoint.html",
+          "hash": "b5qcNlweLdUZMod6JCPuKE60UQlimBMWJZ0vbi2AiMY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Endpoints.UserEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Endpoints.UserEndpoint.html",
+          "hash": "MwgU8yDff9dfMJZMfIiK7c7DVnOw9R1YcePuvjS6oEM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Extensions.JsonSerializerExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Extensions.JsonSerializerExtension.html",
+          "hash": "zkRpP7JtNzCayBxX+bxQCT03xedU7QelUYG/YACVXTg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Extensions.html",
+          "hash": "xC3rLYz6xt0KU/rzPxHV1+xB31wbmrt8KMqdvelYJy8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Http.Interfaces.IRequester.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Http.Interfaces.IRequester.html",
+          "hash": "mqtVd8vYGivTw4IphlLPxBUE4A5UOl/phCUDk848Imc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Http.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Http.Interfaces.html",
+          "hash": "DiK/ks2jR7Hf05tYbqPzaefb/no9Y5FdMWifmak/XsY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Http.Requester.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Http.Requester.html",
+          "hash": "545LfWjGOiaQBOGHVr0M+fRkkqLZVFoH8JEgyrrv6FI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Http.RequesterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Http.RequesterBase.html",
+          "hash": "umZtFXgLmwe5zC3S0NjTwmiRtjZR1SR7KNBzDwzWl8k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Http.html",
+          "hash": "MkTYXyG7HJeqENGuvWsm7eXUwmjmViJA7g30HFOsQNU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.IKartriderApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.IKartriderApi.html",
+          "hash": "Tk9kTL1aG1P8jk8sBMm2S8Yyb3h3+KJSXDWWCV50T6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Json.Converter.AllMatchesJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Json.Converter.AllMatchesJsonConverter.html",
+          "hash": "/Zpf6PQenFA05GDC8MWv6xxZlKcGvjbWXB7xfIsAye0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Json.Converter.MatchInfoJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Json.Converter.MatchInfoJsonConverter.html",
+          "hash": "+YZ0c8RQWJwwUGUt85A0V/uzj1EdHyslQV2msijUGnI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Json.Converter.PlayerJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Json.Converter.PlayerJsonConverter.html",
+          "hash": "oC7TxrK24sN6vJTIOYj4f8Ci3Wd/K4mGySFjyks62Z4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.Json.Converter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.Json.Converter.html",
+          "hash": "v9xocmcmiLSyFf7rSSU70gi2HVBPm0dzYqYwGJbJb28="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.KartriderApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.KartriderApi.html",
+          "hash": "Mqpyvo87TvS/8K9Wc+XGlXy6XIqRSnOfiiQQ3VuZfQk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.KartriderApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.KartriderApiException.html",
+          "hash": "hL7Unl20VkCV39p4jhblnJ+P0ax+rnNxpfkgXNhYCR0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Kartrider.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Kartrider.Api.html",
+          "hash": "iv+NdwUvtkRASftEXkmuI4ZrNJ/abK9+KKXPfKZ5CRM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "oc75GgrWq2s3k5078M9ct+LV44oe1LeUkRIiO4GtLiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 38,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
